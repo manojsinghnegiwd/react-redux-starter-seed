@@ -23,8 +23,8 @@ export class App extends React.Component {
 
 function mapStateToProps(state) {
 	return {
-		message: state.get('message');
-		color: state.get('color');
+		message: state.get('message'),
+		color: state.get('color')
 	};
 }
 

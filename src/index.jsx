@@ -15,7 +15,8 @@ const store = createStoreDevTools(reducer);
 store.dispatch({
 	type: 'SET_STATE',
 	state: {
-		message: 'Enjoy Immutable , React and redux'
+		message: 'Enjoy Immutable , React and redux & click me to change my color',
+		textColor: 'black'
 	}
 });
 

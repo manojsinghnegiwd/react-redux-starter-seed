@@ -16,10 +16,8 @@ describe('reducer', () => {
 		const nextState = reducer(initialState, action);
 
 		expect(nextState).to.equal(fromJS({
-			state: {
-				message: 'Enjoy Immutable , React and redux & click me to change my color',
-				textColor: 'black'
-			}
+			message: 'Enjoy Immutable , React and redux & click me to change my color',
+			textColor: 'black'
 		}));
 	});
 });

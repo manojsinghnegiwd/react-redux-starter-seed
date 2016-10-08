@@ -20,4 +20,20 @@ describe('reducer', () => {
 			textColor: 'black'
 		}));
 	});
+
+	it('handles SET_STATE without initialState', () => {
+		const action = {
+			type: 'SET_STATE',
+			state: Map({
+				message: 'Enjoy Immutable , React and redux & click me to change my color',
+				textColor: 'black'
+			})
+		}
+		const nextState = reducer(undefined, action);
+
+		expect(nextState).to.equal(fromJS({
+			message: 'Enjoy Immutable , React and redux & click me to change my color',
+			textColor: 'black'
+		}));
+	});
 });

@@ -36,4 +36,23 @@ describe('reducer', () => {
 			textColor: 'black'
 		}));
 	});
+
+	it('handles CHANGE_COLOR by changing text color', () => {
+		const initialState = fromJS({
+	    	message: 'Enjoy Immutable , React and redux & click me to change my color',
+			textColor: 'black'
+	    });
+
+	    const action = {
+	    	type: 'CHANGE_COLOR',
+	    	color: 'red'
+	    }
+
+	    const nextState = reducer(initialState, action);
+
+	    expect(nextState).to.equal(fromJS({
+	    	message: 'Enjoy Immutable , React and redux & click me to change my color',
+			textColor: 'red'
+	    }));
+	});
 });

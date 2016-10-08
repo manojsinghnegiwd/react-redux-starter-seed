@@ -16,7 +16,7 @@ export class App extends React.Component {
 
     render() {
         return (
-        	<h1 style={{color: this.props.color}} onClick={this._changeColor}>{this.props.message}</h1>
+        	<h1 style={{color: this.props.textColor}} onClick={this._changeColor}>{this.props.message}</h1>
         );
     }
 }
@@ -24,7 +24,7 @@ export class App extends React.Component {
 function mapStateToProps(state) {
 	return {
 		message: state.get('message'),
-		color: state.get('color')
+		textColor: state.get('textColor')
 	};
 }
 

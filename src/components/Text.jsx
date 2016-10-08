@@ -13,7 +13,7 @@ export default class Text extends React.Component {
 
     render() {
         return (
-        	<h1 style={{color: this.props.textColor}} onClick={this._changeColor}>{this.props.message}</h1>
+        	<h1 ref="text" style={{color: this.props.textColor}} onClick={this._changeColor}>{this.props.message}</h1>
         );
     }
 }

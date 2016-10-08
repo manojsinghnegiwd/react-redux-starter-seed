@@ -10,9 +10,13 @@ export class App extends React.Component {
 		super(props);
 	}
 
+	this._changeColor () {
+		return this.props.changeColor('red');
+	}
+
     render() {
         return (
-        	<h1 onClick={this.changeColor}>{this.props.message}</h1>
+        	<h1 style={{color: this.props.color}} onClick={this._changeColor}>{this.props.message}</h1>
         );
     }
 }

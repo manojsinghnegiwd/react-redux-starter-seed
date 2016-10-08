@@ -1,4 +1,4 @@
-action function changeColor(color) {
+export function changeColor(color) {
 	return {
 		type: 'CHANGE_COLOR',
 		color

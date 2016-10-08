@@ -6,6 +6,8 @@ import * as actionCreators from '../action_creators';
 export class App extends React.Component {
 	constructor(props) {
 		super(props);
+
+		this._changeColor = this._changeColor.bind(this);
 	}
 
 	_changeColor () {

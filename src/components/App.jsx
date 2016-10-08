@@ -26,4 +26,4 @@ function mapStateToProps(state) {
 	};
 }
 
-export const AppContainer = connect(mapStateToProps, actionCreators)(TodoApp);
+export const AppContainer = connect(mapStateToProps, actionCreators)(App);

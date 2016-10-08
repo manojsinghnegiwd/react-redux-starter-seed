@@ -10,7 +10,7 @@ export class App extends React.Component {
 		super(props);
 	}
 
-	this._changeColor () {
+	_changeColor () {
 		return this.props.changeColor('red');
 	}
 

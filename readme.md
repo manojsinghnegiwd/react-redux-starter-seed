@@ -21,6 +21,7 @@ npm install
 ````
 Dev server
 ---
+Server starts on *http://localhost:8080*
 ````sh
 npm run dev
 ````
